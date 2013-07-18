@@ -1,0 +1,8 @@
+<Alloy>
+	<Window>
+		<NavigationGroup id="navGroup" platform="ios">
+			<Require src="main" />
+		</NavigationGroup>
+	</Window>
+	<Require src="main" id="mainWindow"/>
+</Alloy>

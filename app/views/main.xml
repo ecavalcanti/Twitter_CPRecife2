@@ -1,0 +1,19 @@
+<Alloy>
+	<Window title="#CPRecife2" id="win">
+		<RightNavButton platform="ios">
+			<Button class="refreshiOSButton" onClick="fetchTwitter" />
+		</RightNavButton>
+		<Menu id="menu" platform="android">
+            <MenuItem id="menuItem" onClick="fetchTwitter" class="refreshAndroidButton"/>
+        </Menu>        		
+
+		<TableView dataCollection="twitters" dataTransform="transformFunction">
+			<TableViewRow>
+				<ImageView id="twitterImage" image="{profile_image_url}" class="twitterImage"/>
+				<Label id="twitterName" text="{fromUser}" class="twitterName"/>
+				<Label id="twitterText" text="{text}" class="twitterText"/>
+			</TableViewRow>
+		</TableView>
+				
+	</Window>
+</Alloy>
