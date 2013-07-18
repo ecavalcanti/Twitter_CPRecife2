@@ -1,6 +1,6 @@
 <Alloy>
-	<Window>
-		<NavigationGroup id="navGroup" platform="ios">
+	<Window platform="ios">
+		<NavigationGroup id="navGroup">
 			<Require src="main" />
 		</NavigationGroup>
 	</Window>
